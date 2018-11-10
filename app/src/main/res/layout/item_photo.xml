@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/item_photo_margin">
+
+    <ImageView
+        android:id="@+id/feedImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/photo"
+        android:scaleType="fitXY"
+        android:src="@drawable/drawable_placeholder"
+        app:layout_constraintDimensionRatio="H,4:3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/feedTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/feedImageView"
+        android:layout_marginBottom="@dimen/title_margin_bottom"
+        android:background="@color/colorAccent"
+        android:fontFamily="sans-serif-black"
+        android:paddingStart="@dimen/title_paddingLeft"
+        android:paddingTop="@dimen/title_paddingBottomTop"
+        android:paddingEnd="@dimen/title_paddingRight"
+        android:paddingBottom="@dimen/title_paddingBottomTop"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/title_textSize"
+        app:layout_constraintBottom_toBottomOf="@id/feedImageView" />
+
+</android.support.constraint.ConstraintLayout>
